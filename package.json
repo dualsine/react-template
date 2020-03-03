@@ -1,0 +1,37 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch": "webpack --watch --mode development --port 3000",
+    "build-js": "rm -rf ./dist && webpack --mode production",
+    "start": "concurrently \"npm run watch\" \"cd ./dist && serve -l 3000\"",
+    "build": "npm run build-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mobx": "^5.15.3",
+    "mobx-react": "^6.1.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "foreman": "^3.0.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "process": "^0.11.10",
+    "react": "^16.11.0",
+    "react-dom": "^16.13.0"
+  }
+}

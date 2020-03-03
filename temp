@@ -1,0 +1,8 @@
+,
+  devServer: {
+    port: 3000,
+    disableHostCheck: true,
+    hot: true,
+    inline: true,
+    https: true
+  }
